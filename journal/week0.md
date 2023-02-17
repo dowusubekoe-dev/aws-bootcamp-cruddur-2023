@@ -90,7 +90,6 @@ I already had a git hub account so I was able create the [aws-bootcamp-cruddur-2
 #### Using CloudShell
 
 
-
 #### Create an architectural diagram of the CI/CD logical pipeline
 
-[Simple IIS Webserver on EC2](https://lucid.app/lucidchart/cd99faea-ad77-460e-84f9-672d209830da/edit?invitationId=inv_72200188-6c85-46c7-9d19-87d2d124aec2)
+[Simple IIS Webserver on EC2](https://lucid.app/lucidchart/09d7247f-d701-40a6-92a4-c6dd19c181d4/edit?viewport_loc=113%2C143%2C2002%2C1148%2C0_0&invitationId=inv_6a3f4409-5e1a-4f87-a3fb-e20d0561b243)

@@ -17,29 +17,15 @@
 #    - 42Crunch.vscode-openapi
 
 tasks:
-  - name: Initialize & Configure AWS
-    command: bash $GITPOD_REPO_ROOT/configure_aws_with_gitpod.sh
-
-# The 'github' section defines configuration of continuous prebuilds
-# for GitHub repositories when the GitHub application
-# 'https://github.com/apps/gitpod-io' is installed in GitHub and granted
-# permissions to access the repository.
-#
-# Learn more at 'https://www.gitpod.io/docs/prebuilds'
-
-github:
-  prebuilds:
-    # enable for the default branch
-    master: true
-    # enable for all branches in this repo
-    branches: true
-    # enable for pull requests coming from this repo
-    pullRequests: true
-    # enable for pull requests coming from forks
-    pullRequestsFromForks: true
-    # add a check to pull requests
-    addCheck: true
-    # add a "Review in Gitpod" button as a comment to pull requests
-    addComment: false
-    # add a "Review in Gitpod" button to the pull request's description
-    addBadge: true
+  - name: aws-cli
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    init: |
+      cd /workspace
+      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      unzip -qq awscliv2.zip
+      sudo ./aws/install
+      cd $THEIA_WORKSPACE_ROOT
+vscode:
+  extensions:
+    - 42Crunch.vscode-openapi
