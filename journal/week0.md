@@ -87,7 +87,15 @@ I already had a git hub account so I was able create the [aws-bootcamp-cruddur-2
 #### Set a Billing alarm (CloudWatch)
 #### Set a AWS Budget
 #### Generating AWS Credentials
-#### Using CloudShell
+#### Install AWS CLI 
+I was able to configure Gitpod with my Github credentials but unfortunately I could not set up AWS on Gitpod because I didn't the values I had to use for the Variables.
+For this project, I build an ESXi server, which I also created a VM (Ubuntu 20.0 Desktop) as my development machine. I used the following steps to configure AWS on the Ubuntu VM;
+- I installed the AWS CLI via command in **Command Prompt**
+```
+aws configure
+```
+- I entered my Access Key and Secret Key to complete the configuration. Screenshot inserted below.
+![Confirmation that AWS CLI is installed](_docs/assets/aws-cli-config.png)
 
 
 #### Create an architectural diagram of the CI/CD logical pipeline
