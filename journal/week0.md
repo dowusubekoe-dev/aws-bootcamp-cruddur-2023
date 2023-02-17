@@ -71,7 +71,7 @@ This tool helps developers to log the sources of issues reported by users intera
 > ##### a. Creating AWS Root Account
 I created a new account by signing up another Gmail account.
 
-![Congratulations](/Volumes/extSD/code-bootcamp/aws-bootcamp-cruddur-2023/images/create-iam.png)
+![Congratulations](_docs/assets/create-iam.png)
 
 I also set up MFA for the root account by following the [best practices to protect your account](https://docs.aws.amazon.com/accounts/latest/reference/best-practices-root-user.html).
 > ##### b. Creating IAM Account
