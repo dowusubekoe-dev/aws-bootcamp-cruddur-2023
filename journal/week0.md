@@ -34,11 +34,13 @@ This tool helps developers to log the sources of issues reported by users intera
 I joined the live stream for the bootcamp and we got introduced to the entire team as well as the support team. I did learn a lot about SDLC, which talks more about the stages a software or an application goes through before it is published to public.
 
 #### Recreate Conceptual Diagram in Lucid Chart or on Napkin
-I used Lucid Chart to design a [Simple IIS Webserver on EC2](https://lucid.app/lucidchart/cd99faea-ad77-460e-84f9-672d209830da/edit?viewport_loc=146%2C69%2C2107%2C1208%2C0_0&invitationId=inv_72200188-6c85-46c7-9d19-87d2d124aec2) and adding some security in terms of permissions and port numbers to allow users to interact with the web server
+I used Lucid Chart to design a [Simple IIS Webserver on EC2](https://lucid.app/lucidchart/cd99faea-ad77-460e-84f9-672d209830da/edit?viewport_loc=146%2C69%2C2107%2C1208%2C0_0&invitationId=inv_72200188-6c85-46c7-9d19-87d2d124aec2) and adding some security in terms of permissions and port numbers to allow users to interact with the web server.
+![Conceptual Design](_docs/assets/iis-webserver-ec2.png)
 
 #### Recreate Logical and Architectural Diagram in Lucid Charts
 I created an account in Lucid Chart and tried my hands on how to use the tool in creating architectural designs. I very good tool indeed. I just the how easy the objects can be connected. My redesign is inserted below;
 [Created Conceptual Diagram](https://lucid.app/lucidchart/09d7247f-d701-40a6-92a4-c6dd19c181d4/edit?viewport_loc=113%2C143%2C2002%2C1148%2C0_0&invitationId=inv_6a3f4409-5e1a-4f87-a3fb-e20d0561b243)
+![Logical and Architectural Design](_docs/assets/logical-architectural-design.png)
 
 
 #### Technical Tasks
