@@ -12,11 +12,9 @@
     - [Rollbar Account](https://rollbar.com/)
 - [Bootcamp Overview & Intro](#overview)
     1. [Technical Tasks](#tech-tasks)
-    <ol type="a">
-    1. [Creating AWS Root Account](root-account)
-    1. [Creating AWS Account](aws-account)
-    1. [Creating New Repository](github-account)
-    </ol>
+        - [Creating AWS Root Account](root-account)
+        - [Creating AWS Account](aws-account)
+        - [Creating New Repository](github-account)
     2. [Business Scenario](#scenario)
 - [Homework Hard Assignments](#hha)
     - [Set a Billing alarm (CloudWatch)](#set-alarm)
@@ -81,12 +79,16 @@ I created an IAM account and added [AdministratorAccess](https://docs.aws.amazon
 I already had a git hub account so I was able create the [aws-bootcamp-cruddur-2023](https://github.com/ExamProCo/aws-bootcamp-cruddur-2023) repository without any issue.
 
 #### Business Scenario
+
 #### Weekly Outcome
 
 ### Homework Hard Assignments
-#### Set a Billing alarm (CloudWatch)
+
+#### Set a Billing alarm
+
 #### Set a AWS Budget
 #### Generating AWS Credentials
+
 #### Install AWS CLI 
 I was able to configure Gitpod with my Github credentials but unfortunately I could not set up AWS on Gitpod because I didn't the values I had to use for the Variables.
 For this project, I build an ESXi server, which I also created a VM (Ubuntu 20.0 Desktop) as my development machine. I used the following steps to configure AWS on the Ubuntu VM;
@@ -95,6 +97,7 @@ For this project, I build an ESXi server, which I also created a VM (Ubuntu 20.0
 aws configure
 ```
 - I entered my Access Key and Secret Key to complete the configuration. Screenshot inserted below.
+
 ![Confirmation that AWS CLI is installed](_docs/assets/aws-cli-config.png)
 
 
