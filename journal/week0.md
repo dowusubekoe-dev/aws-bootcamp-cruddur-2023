@@ -1,72 +1,39 @@
 # Week 0 — Billing and Architecture
 
-## Table of Contents
-- [Prerequisite Technologies](#prerequisite)
-    - [GitHub](https://github.com/)
-    - [Gitpod](https://gitpod.io/)
-    - [GitHub Codespaces](https://github.com/features/codespaces)
-    - [Momento Account](https://www.gomomento.com/)
-        - [Configure CLI](#momento-cli)
-    - [Purchase a Domain](https://tld-list.com/)
-    - [HoneyComb.io](https://www.honeycomb.io/)
-    - [Rollbar Account](https://rollbar.com/)
-- [Bootcamp Overview & Intro](#overview)
-    1. [Technical Tasks](#tech-tasks)
-        - [Creating AWS Root Account](root-account)
-        - [Creating AWS Account](aws-account)
-        - [Creating New Repository](github-account)
-    2. [Business Scenario](#scenario)
-- [Homework Hard Assignments](#hha)
-    - [Set a Billing alarm (CloudWatch)](#set-alarm)
-    - [Set a AWS Budget](#aws-budget)
-    - [Generating AWS Credentials](#credentials)
-    - [Using CloudShell](#cloudshell)
-    - [Conceptual Architecture Diagram](#napkins)
-- [Homework Stretch Assignments](#hsa)
-    - [Destroy root account credentials, set MFA, IAM roles](#destroy-root)
-    - [EventBridge can be used to notify SNS of service health issues](#eventbridge)
-    - [Review all pillars in the Well Architected Tool](#well-architected)
-    - [Create an architectural diagram of the CI/CD logical pipeline in Lucid Charts](#lucid-chart)
-    - [Research technical and service limits to ensure technical flexibility](#tech-services)
-- [Resources](#resouces)
-    - [Creating an EventBridge rule for AWS Health](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
-    - [System Design for Beginners](https://www.youtube.com/watch?v=m8Icp_Cid5o&t=8s)
-    - [Integrate AWS-CLI and ECR in Gitpod](https://www.gitpod.io/guides/integrate-aws-cli-ecr)
+## Prerequisite Technologies
 
-### Prerequisite Technologies
-
-#### GitHub
+### GitHub
 I already have a Github account, which has been active for over 3 years so I was able to create the Grud repository with no issues.I know Github is version control tool that allow you host your code in an online storage and it also helps in collaboration between developers.[ Github](https://github.com)
 
-#### Gitpod
+### Gitpod
 This is kind of something new to me but I did watch some video tutorials and I learnt that it is a cloud development environment that efficiently and securely allow teams to develop a software.[ Gitpod: Always ready to code.](https://www.gitpod.io)
 
-#### GitHub Spaces
+### GitHub Spaces
 I have some experience in GitHub Codespaces because I have been using Github for a while and I used to collaborate with my team on it during my coding bootcamp.
 
-#### Momento
+### Momento
 Momento is also another new tool to me and I know it is one of the fastest tools for caching serverless applications. I was able to create the account and also configured the CLI on a Macbook Pro.
-##### Configure CLI
+#### Configure CLI
 ```
 brew tap momentohq/tap
 brew install momento-cli
 ```
-#### Purchase a Domain
+### Purchase a Domain
 For the purchase of the domain, I went to [Cosmotown](https://www.cosmotown.com/) and they has a promotion so I was able to get one at cheaper price.
 
-#### HoneyComb
+### HoneyComb
 This tool helps developers to log the sources of issues reported by users interacting with the code with regards to how the application behaves and performs during all the lifecycle stages.
 
 ![Feedback on Performance](https://www.honeycomb.io/wp-content/uploads/2022/10/Fast-feedback-on-real-world-performance-v2.svg)
 ![Feedback on Service Reliability](https://www.honeycomb.io/wp-content/uploads/2022/10/Fast-feedback-on-service-reliability-v2.svg)
 
-#### Rollbar Account
+### Rollbar Account
 [Rollbar](https://rollbar.com/) provides full coverage across all the applications that your users depend on and love. Automate real-time error response, ensure happier customers, and more productive development teams.
 
 ### Bootcamp Overview & Intro
 
 #### Technical Tasks
-> ##### a. Creating AWS Root Account
+> ##### a. Creating AWS Admin Account
 I created a new account by signing up another Gmail account.
 
 ![Congratulations](_docs/assets/create-iam.png)
@@ -79,20 +46,17 @@ I created an IAM account and added [AdministratorAccess](https://docs.aws.amazon
 I already had a git hub account so I was able create the [aws-bootcamp-cruddur-2023](https://github.com/ExamProCo/aws-bootcamp-cruddur-2023) repository without any issue.
 
 #### Business Scenario
+I joined the live streaming and listened to the presentation that was done by the support team. The explanations provided helped me better understand the process that a project goes through before it is been published to the public.
 
-#### Weekly Outcome
-
-### Homework Hard Assignments
-
-#### Set a Billing alarm
-
-#### Set a AWS Budget
 #### Generating AWS Credentials
+I went through the [AWS documentation](https://docs.aws.amazon.com/keyspaces/latest/devguide/access.credentials.html) on how to create a password for an account. In addition to that, I also created the AWS_ACCESS_KEY and AWS_SECRET_KEY and enabling the console access for the IAM account.
 
 #### Install AWS CLI 
 I was able to configure Gitpod with my Github credentials but unfortunately I could not set up AWS on Gitpod because I didn't the values I had to use for the Variables.
 For this project, I build an ESXi server, which I also created a VM (Ubuntu 20.0 Desktop) as my development machine. I used the following steps to configure AWS on the Ubuntu VM;
-- I installed the AWS CLI via command in **Command Prompt**
+- I installed the AWS CLI via command in **Command Prompt** by goinng through the instructions [AWS CLI install and update](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+I initially run the command below
 ```
 aws configure
 ```
@@ -100,6 +64,11 @@ aws configure
 
 ![Confirmation that AWS CLI is installed](_docs/assets/aws-cli-config.png)
 
+#### Create a Billing alarm
+I already have an account with Billing configured so I added the one for Credit and updated the existing budget with three thresholds with notifications been sent to my email address.
+
+#### Create a Budget
+The budget was set up some few months back when I created the AWS account.
 
 #### Create an architectural diagram of the CI/CD logical pipeline
 
